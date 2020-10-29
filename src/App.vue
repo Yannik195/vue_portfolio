@@ -46,4 +46,8 @@ body {
   /* text-align: center; */
   /* color: #2c3e50; */
 }
+
+h5 {
+  color: rgba(0, 0, 0, 0.9);
+}
 </style>

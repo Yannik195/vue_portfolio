@@ -14,6 +14,14 @@
         <p class="text">🚀Kreativ 💻Interessiert ⛹Aktiv</p>
       </div>
     </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, maiores! Nam consectetur sapiente at accusamus odio, eum quam quaerat magni libero eos ea minus expedita fugiat obcaecati velit saepe quo!</h5>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 

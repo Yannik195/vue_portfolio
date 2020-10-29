@@ -6,7 +6,14 @@
         <h1>Bounce.</h1>
         <p>Dribble, Dribble, Score!</p>
       </div>
-      <div class="col-md m-2 project eckfahne">
+      <div
+        @click="
+          openLink(
+            'https://docs.google.com/presentation/d/1rsB_84r4S-thN2S5q3s0YLm9ZCcculqCo4luA3Oli0I/edit#slide=id.p'
+          )
+        "
+        class="col-md m-2 project eckfahne"
+      >
         <!-- Eckfahne -->
         <p class="eckfahneTitle">Eckfahne</p>
         <p>Android Mobile Application</p>
@@ -20,7 +27,12 @@
           <h1>Beas</h1>
         </div>
       </div>
-      <div class="col-md m-2 project">div 4</div>
+      <div
+        @click="openLink('https://pedantic-poincare-45202e.netlify.app')"
+        class="col-md m-2 project"
+      >
+        SimonARC GmbH
+      </div>
     </div>
   </div>
 </template>
@@ -32,6 +44,9 @@ export default {
     return {};
   },
   methods: {
+    openLink: function (link) {
+      window.open(link);
+    },
     openBounce: function () {
       window.open("https://yannik195.github.io/bounce/");
     },
@@ -60,6 +75,7 @@ export default {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  cursor: pointer;
 }
 
 .project :hover {
