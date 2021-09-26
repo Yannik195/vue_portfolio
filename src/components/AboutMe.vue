@@ -16,7 +16,7 @@
         </div>
       </div>
     </div>
-    <i class="fas fa-arrow-down"></i>
+    <i class="fas fa-arrow-down fa-sm"></i>
   </div>
 </template>
 
@@ -113,6 +113,10 @@ i {
   .socials i {
     color: #fff;
     margin: 0 24px;
+  }
+
+  .fa-arrow-down {
+    display: none;
   }
 }
 </style>
