@@ -1,15 +1,14 @@
 <template>
   <div id="app">
-    <AboutMe></AboutMe>
-    <Projects></Projects>
-    <Skills></Skills>
+    <header>
+      <AboutMe></AboutMe>
+    </header>
+    <main>test</main>
   </div>
 </template>
 
 <script>
 import AboutMe from "./components/AboutMe.vue";
-import Projects from "./components/Projects.vue";
-import Skills from "./components/Skills.vue";
 
 export default {
   name: "App",
@@ -21,8 +20,6 @@ export default {
   },
   components: {
     AboutMe,
-    Projects,
-    Skills,
   },
 };
 </script>
@@ -38,12 +35,15 @@ body {
   font-weight: 700;
   font-size: 1.5em;
 }
-
+header {
+  height: 100vh;
+}
 h1,
 h2,
 h3,
 h4 {
   font-weight: 700;
   color: #353a5a;
+  margin: 0;
 }
 </style>
