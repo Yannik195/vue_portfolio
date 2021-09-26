@@ -70,6 +70,7 @@ i {
 .socials {
   display: flex;
   justify-content: space-between;
+  margin: 0 16px;
 }
 
 .fa-arrow-down {
