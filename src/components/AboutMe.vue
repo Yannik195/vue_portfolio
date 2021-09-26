@@ -31,18 +31,18 @@ export default {
 
 <style scoped>
 img {
-  max-height: clamp(250px, 30vw, 400px);
+  max-height: clamp(250px, 25vw, 400px);
   transform: scaleX(-1);
   border-radius: 100%;
   background: #91a6ff;
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: clamp(24px, 12vw, 64px);
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: clamp(18px, 8vw, 24px);
   margin: 32px 0 48px 0;
 }
 
@@ -82,14 +82,28 @@ i {
 }
 
 @media only screen and (max-width: 900px) {
+  h1 {
+    font-size: 42px;
+  }
+
+  img {
+    width: clamp(150px, 15vw 420px);
+  }
   .hero {
     flex-direction: column;
     text-align: center;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .socials {
     background: #353a5a;
     border-radius: 5px;
     padding: 12px;
+    margin: 0 16px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -98,6 +112,7 @@ i {
 
   .socials i {
     color: #fff;
+    margin: 0 32px;
   }
 }
 </style>
