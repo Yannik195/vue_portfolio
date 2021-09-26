@@ -37,7 +37,7 @@ export default {
 .navbar ul li {
   list-style-type: none;
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 0.8rem;
   padding: 0 24px;
 }
 
