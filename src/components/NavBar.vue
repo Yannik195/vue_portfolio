@@ -2,7 +2,7 @@
   <div class="navbar">
     <div class="desktop-nav">
       <ul>
-        <li>About me</li>
+        <li class="active">About me</li>
         <li>Projects</li>
         <li>Skills</li>
         <li>Contact</li>
@@ -25,19 +25,38 @@ export default {
 <style scoped>
 .navbar {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 24px;
+  display: flex;
+  justify-content: end;
 }
 .navbar ul {
   display: flex;
+  margin: 0;
 }
 
 .navbar ul li {
   list-style-type: none;
   text-transform: uppercase;
+  font-size: 1rem;
+  padding: 0 24px;
 }
 
-@media only screen and (max-width: 600px) {
+.fa-bars {
+  display: none;
+  color: #fe5f55;
+}
+
+.active {
+  color: #fe5f55;
+}
+
+@media only screen and (max-width: 900px) {
   .desktop-nav {
     display: none;
+  }
+
+  .fa-bars {
+    display: block;
   }
 }
 </style>

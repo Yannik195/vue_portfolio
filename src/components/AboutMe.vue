@@ -31,7 +31,7 @@ export default {
 
 <style scoped>
 img {
-  max-height: clamp(300px, 30vw, 400px);
+  max-height: clamp(250px, 30vw, 400px);
   transform: scaleX(-1);
   border-radius: 100%;
   background: #91a6ff;
