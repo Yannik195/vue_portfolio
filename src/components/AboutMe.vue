@@ -10,9 +10,9 @@
         </h1>
         <h2>Ich mag Code.</h2>
         <div class="socials">
-          <i class="fab fa-github fa-xs"></i>
-          <i class="fab fa-linkedin fa-xs"></i>
-          <i class="fab fa-instagram fa-xs"></i>
+          <i class="fab fa-github"></i>
+          <i class="fab fa-linkedin"></i>
+          <i class="fab fa-instagram"></i>
         </div>
       </div>
     </div>
@@ -65,6 +65,7 @@ h1 span {
 
 i {
   color: #353a5a;
+  font-size: 2rem;
 }
 
 .socials {
@@ -117,6 +118,10 @@ i {
 
   .fa-arrow-down {
     display: none;
+  }
+
+  i {
+    font-size: 1.2rem;
   }
 }
 </style>
