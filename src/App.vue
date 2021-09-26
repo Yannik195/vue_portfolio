@@ -28,26 +28,22 @@ export default {
 </script>
 
 <style>
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+
 html,
 body {
   margin: 0;
   padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1.5em;
 }
 
-#app {
-  font-family: "Noto Sans", sans-serif;
-  color: #011627;
-  max-width: 1200px;
-  margin: 0 auto;
-  /* font-family: "Roboto", sans-serif; */
-  /* font-family: "Noto Sans", sans-serif; */
-  /* -webkit-font-smoothing: antialiased; */
-  /* -moz-osx-font-smoothing: grayscale; */
-  /* text-align: center; */
-  /* color: #2c3e50; */
-}
-
-h5 {
-  color: rgba(0, 0, 0, 0.9);
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 700;
+  color: #353a5a;
 }
 </style>
