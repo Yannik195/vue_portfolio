@@ -11,8 +11,8 @@ export default {
 
 <style scoped>
 span {
-  color: #353a5a;
-  border: 1px #353a5a solid;
+  color: var(--blue-two);
+  border: 1px var(--blue-two) solid;
   border-radius: 4px;
   padding: 2px 4px;
   margin: 0 4px 0 0;

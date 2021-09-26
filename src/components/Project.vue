@@ -53,7 +53,7 @@ img {
 }
 
 h2 {
-  color: #353a5a;
+  color: var(--blue-two);
   margin: 0;
 }
 
