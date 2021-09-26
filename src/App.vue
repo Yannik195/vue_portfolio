@@ -3,23 +3,23 @@
     <header>
       <AboutMe></AboutMe>
     </header>
-    <main>test</main>
+    <main>
+      <Projects></Projects>
+    </main>
   </div>
 </template>
 
 <script>
 import AboutMe from "./components/AboutMe.vue";
-
+import Projects from "./components/Projects.vue";
 export default {
   name: "App",
   data: () => {
-    return {
-      mobileView: false,
-      showNav: false,
-    };
+    return {};
   },
   components: {
     AboutMe,
+    Projects,
   },
 };
 </script>
