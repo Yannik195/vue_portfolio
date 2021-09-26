@@ -8,7 +8,7 @@
         <li>Contact</li>
       </ul>
     </div>
-    <i class="fas fa-bars"></i>
+    <i class="fas fa-bars fa-sm"></i>
   </div>
 </template>
 
@@ -25,7 +25,7 @@ export default {
 <style scoped>
 .navbar {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  padding: 20px;
+  padding: 16px;
   display: flex;
   justify-content: end;
 }

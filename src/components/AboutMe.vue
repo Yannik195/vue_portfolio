@@ -10,9 +10,9 @@
         </h1>
         <h2>Ich mag Code.</h2>
         <div class="socials">
-          <i class="fab fa-github fa-lg"></i>
-          <i class="fab fa-linkedin fa-lg"></i>
-          <i class="fab fa-instagram fa-lg"></i>
+          <i class="fab fa-github"></i>
+          <i class="fab fa-linkedin"></i>
+          <i class="fab fa-instagram"></i>
         </div>
       </div>
     </div>
@@ -43,7 +43,7 @@ h1 {
 
 h2 {
   font-size: clamp(18px, 8vw, 24px);
-  margin: 32px 0 48px 0;
+  margin: 28px 0 44px 0;
 }
 
 h1 span {
@@ -83,11 +83,11 @@ i {
 
 @media only screen and (max-width: 900px) {
   h1 {
-    font-size: 42px;
+    font-size: 38px;
   }
 
   img {
-    width: clamp(150px, 15vw 420px);
+    max-height: clamp(200px, 25vw, 400px);
   }
   .hero {
     flex-direction: column;
@@ -112,7 +112,7 @@ i {
 
   .socials i {
     color: #fff;
-    margin: 0 32px;
+    margin: 0 24px;
   }
 }
 </style>
