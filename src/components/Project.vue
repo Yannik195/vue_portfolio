@@ -52,6 +52,10 @@ img {
   width: clamp(120px, 40vw, 800px);
 }
 
+h2 {
+  color: #353a5a;
+}
+
 @media only screen and (max-width: 900px) {
   .wrapper-even {
     flex-direction: column;

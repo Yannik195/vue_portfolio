@@ -46,4 +46,12 @@ h4 {
   color: #353a5a;
   margin: 0;
 }
+
+h1 {
+  font-size: 38px;
+}
+
+h2 {
+  font-size: 24px;
+}
 </style>

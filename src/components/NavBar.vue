@@ -8,7 +8,7 @@
         <li>Contact</li>
       </ul>
     </div>
-    <i class="fas fa-bars fa-sm"></i>
+    <i class="fas fa-bars fa-xs"></i>
   </div>
 </template>
 
