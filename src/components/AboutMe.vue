@@ -10,9 +10,9 @@
         </h1>
         <h2>Ich mag Code.</h2>
         <div class="socials">
-          <i class="fab fa-github"></i>
-          <i class="fab fa-linkedin"></i>
-          <i class="fab fa-instagram"></i>
+          <i class="fab fa-github fa-xs"></i>
+          <i class="fab fa-linkedin fa-xs"></i>
+          <i class="fab fa-instagram fa-xs"></i>
         </div>
       </div>
     </div>

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="project">
     <div v-if="project.id % 2 == 1" class="wrapper-uneven">
       <img
         src="https://images.pexels.com/photos/9754/mountains-clouds-forest-fog.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
@@ -54,6 +54,11 @@ img {
 
 h2 {
   color: #353a5a;
+  margin: 0;
+}
+
+.project {
+  margin: 0 0 32px 0;
 }
 
 @media only screen and (max-width: 900px) {
