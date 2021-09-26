@@ -59,7 +59,7 @@ h1 span {
 .hero {
   height: 88vh;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
 }
 
