@@ -1,6 +1,6 @@
 <template>
   <div class="project">
-    <div v-if="project.id % 2 == 1" class="wrapper-uneven">
+    <div v-if="project.id % 2 == 1" class="wrapper-uneven" data-aos="fade-up">
       <img
         src="https://images.pexels.com/photos/9754/mountains-clouds-forest-fog.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
         alt=""
@@ -16,7 +16,7 @@
         ></Tag>
       </div>
     </div>
-    <div v-else class="wrapper-even">
+    <div v-else class="wrapper-even" data-aos="fade-up">
       <div class="info">
         <h1>{{ project.name }}</h1>
         <h3>{{ project.description }}</h3>
@@ -69,7 +69,7 @@ h3 {
 }
 
 .project {
-  margin: 0 0 48px 0;
+  margin: 84px;
 }
 
 .info {

@@ -98,7 +98,7 @@ export default {
   align-items: center;
 }
 .wrapper {
-  max-width: 700px;
+  max-width: 900px;
   display: grid;
   grid-template-columns: repeat(7, minmax(80px, 1fr));
   grid-auto-rows: auto;
@@ -109,6 +109,14 @@ export default {
 
 img {
   width: 100%;
+  height: 70px;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%) opacity(30%) brightness(120%);
+}
+
+img:hover {
+  filter: none;
+  -webkit-filter: none;
 }
 
 h1 {
@@ -123,6 +131,12 @@ h1 {
   .wrapper {
     max-width: 60vw;
     grid-template-columns: repeat(3, minmax(80px, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .wrapper {
+    grid-template-columns: repeat(2, minmax(80px, 1fr));
   }
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
     <NavBar class="navbar"></NavBar>
-    <div class="hero">
+    <div class="hero" data-aos="fade-up">
       <img src="../assets/YannikSimon_compressed.png" alt="" />
       <div class="content">
         <h1>

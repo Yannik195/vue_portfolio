@@ -6,6 +6,9 @@ import App from './App.vue'
 import VueRouter from "vue-router"
 import Element from "element-ui"
 
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
 import AboutMe from "./components/AboutMe.vue";
 import Skills from "./components/Skills.vue";
 import Lebenslauf from "./components/Lebenslauf.vue"
@@ -32,7 +35,11 @@ const router = new VueRouter({
 Vue.config.productionTip = false
 
 new Vue({
+  created() {
+    AOS.init()
+  },
   render: h => h(App),
   vuetify,
-  router
+  router,
+
 }).$mount('#app')
