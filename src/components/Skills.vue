@@ -55,7 +55,7 @@ export default {
         {
           name: "Node.js",
           svg: "https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg",
-          wide: false,
+          wide: true,
         },
         {
           name: "MonogDB",
@@ -91,20 +91,38 @@ export default {
 <style scoped>
 .skills {
   text-align: center;
-  max-width: 700px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .wrapper {
+  max-width: 700px;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-auto-rows: 100px;
+  grid-template-columns: repeat(7, minmax(80px, 1fr));
+  grid-auto-rows: auto;
   justify-items: center;
+  align-items: center;
+  gap: 48px;
 }
 
 img {
-  height: 70px;
+  width: 100%;
+}
+
+h1 {
+  margin: 2em;
 }
 
 .wide {
   grid-column-end: span 2;
+}
+
+@media only screen and (max-width: 900px) {
+  .wrapper {
+    max-width: 60vw;
+    grid-template-columns: repeat(3, minmax(80px, 1fr));
+  }
 }
 </style>
