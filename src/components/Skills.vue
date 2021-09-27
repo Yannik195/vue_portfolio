@@ -1,24 +1,17 @@
 <template>
-  <div>
-    <v-container>
-      <v-row>
-        <h2>Skills</h2>
-      </v-row>
-      <v-row>
-        <v-col
-          v-for="skill in skills"
-          :key="skill.name"
-          cols="6"
-          md="4"
-          sm="6"
-          xs="6"
-          align="center"
-          justify="start"
-        >
-          <img width="170px" height="170px" alt :src="skill.svg" />
-        </v-col>
-      </v-row>
-    </v-container>
+  <div class="skills">
+    <h1>I feel comfortable working with</h1>
+    <div class="wrapper">
+      <img
+        v-for="skill in skills"
+        :key="skill.name"
+        alt=""
+        :src="skill.svg"
+        v-bind:class="{
+          wide: skill.wide,
+        }"
+      />
+    </div>
   </div>
 </template>
 
@@ -28,60 +21,66 @@ export default {
   data: function () {
     return {
       skills: [
-        { name: "Vue.js", svg: "https://cdn.svgporn.com/logos/vue.svg" },
+        {
+          name: "Vue.js",
+          svg: "https://cdn.svgporn.com/logos/vue.svg",
+          wide: false,
+        },
         {
           name: "JavaScript",
           svg: "https://cdn.svgporn.com/logos/javascript.svg",
+          wide: false,
         },
         {
           name: "Git",
-          svg:
-            "https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg",
+          svg: "https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg",
+          wide: true,
         },
         {
           name: "Photoshop",
-          svg:
-            "https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg",
+          svg: "https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg",
+          wide: false,
         },
         {
           name: "Illustrator",
-          svg:
-            "https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg",
+          svg: "https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg",
+          wide: false,
         },
         {
           name: "Xd",
-          svg:
-            "https://upload.wikimedia.org/wikipedia/commons/c/c2/Adobe_XD_CC_icon.svg",
+          svg: "https://upload.wikimedia.org/wikipedia/commons/c/c2/Adobe_XD_CC_icon.svg",
+          wide: false,
         },
 
         {
           name: "Node.js",
-          svg:
-            "https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg",
+          svg: "https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg",
+          wide: false,
         },
         {
           name: "MonogDB",
-          svg:
-            "https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg",
+          svg: "https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg",
+          wide: true,
         },
         {
           name: "NPM",
-          svg:
-            "https://upload.wikimedia.org/wikipedia/commons/d/db/Npm-logo.svg",
+          svg: "https://upload.wikimedia.org/wikipedia/commons/d/db/Npm-logo.svg",
+          wide: true,
         },
         {
           name: "Android",
-          svg:
-            "https://upload.wikimedia.org/wikipedia/commons/8/82/Android_logo_2019.svg",
+          svg: "https://upload.wikimedia.org/wikipedia/commons/8/82/Android_logo_2019.svg",
+          wide: false,
         },
         {
           name: "Java",
           svg: "https://www.vectorlogo.zone/logos/java/java-icon.svg",
+          wide: false,
         },
         {
           name: "Bootstrap",
-          svg:
-            "https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg",
+          svg: "https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg",
+          wide: false,
         },
       ],
     };
@@ -90,19 +89,22 @@ export default {
 </script>
 
 <style scoped>
-* {
+.skills {
   text-align: center;
+  max-width: 700px;
 }
-
-h2 {
-  padding: 12px;
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: 100px;
+  justify-items: center;
 }
 
 img {
-  transition: transform 0.2s;
+  height: 70px;
 }
 
-img:hover {
-  transform: scale(1.02);
+.wide {
+  grid-column-end: span 2;
 }
 </style>

@@ -5,6 +5,7 @@
     </header>
     <main>
       <Projects></Projects>
+      <Skills></Skills>
     </main>
   </div>
 </template>
@@ -12,6 +13,7 @@
 <script>
 import AboutMe from "./components/AboutMe.vue";
 import Projects from "./components/Projects.vue";
+import Skills from "./components/Skills.vue";
 export default {
   name: "App",
   data: () => {
@@ -20,6 +22,7 @@ export default {
   components: {
     AboutMe,
     Projects,
+    Skills,
   },
 };
 </script>
