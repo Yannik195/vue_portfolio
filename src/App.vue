@@ -58,4 +58,8 @@ h1 {
 h2 {
   font-size: 24px;
 }
+
+h3 {
+  font-size: 18px;
+}
 </style>

@@ -5,17 +5,27 @@
         src="https://images.pexels.com/photos/9754/mountains-clouds-forest-fog.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
         alt=""
       />
-      <div>
+      <div class="info">
         <h1>{{ project.name }}</h1>
-        <h2>{{ project.description }}</h2>
-        <Tag v-for="tag in project.tags" :key="tag" v-bind:tag="tag"></Tag>
+        <h3>{{ project.description }}</h3>
+        <Tag
+          class="tag"
+          v-for="tag in project.tags"
+          :key="tag"
+          v-bind:tag="tag"
+        ></Tag>
       </div>
     </div>
     <div v-else class="wrapper-even">
-      <div>
+      <div class="info">
         <h1>{{ project.name }}</h1>
-        <h2>{{ project.description }}</h2>
-        <Tag v-for="tag in project.tags" :key="tag" v-bind:tag="tag"></Tag>
+        <h3>{{ project.description }}</h3>
+        <Tag
+          class="tag"
+          v-for="tag in project.tags"
+          :key="tag"
+          v-bind:tag="tag"
+        ></Tag>
       </div>
       <img
         src="https://images.pexels.com/photos/9754/mountains-clouds-forest-fog.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
@@ -44,21 +54,30 @@ export default {
 .wrapper-even {
   display: flex;
   justify-content: center;
+  text-align: right;
 }
 
 img {
   aspect-ratio: 16 / 9;
   border-radius: 12px;
-  width: clamp(120px, 40vw, 800px);
+  width: clamp(120px, 40vw, 600px);
 }
 
-h2 {
+h3 {
   color: var(--blue-two);
   margin: 0;
 }
 
 .project {
-  margin: 0 0 32px 0;
+  margin: 0 0 48px 0;
+}
+
+.info {
+  margin: 0 16px 16px 16px;
+}
+
+.tag:last-child {
+  margin: 0;
 }
 
 @media only screen and (max-width: 900px) {
@@ -74,7 +93,8 @@ h2 {
   }
 
   img {
-    width: 80%;
+    width: clamp(12px, 94vw, 500px);
+    margin: 0 16px;
   }
 }
 </style>
