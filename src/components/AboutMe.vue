@@ -9,9 +9,18 @@
       </h1>
       <h2>Ich mag Code.</h2>
       <div class="socials">
-        <i class="fab fa-github"></i>
-        <i class="fab fa-linkedin"></i>
-        <i class="fab fa-instagram"></i>
+        <a href="https://github.com/Yannik195/" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/yannik-simon-498b50192/"
+          target="_blank"
+        >
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://www.instagram.com/yaaannik_/" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
       </div>
     </div>
     <i class="fas fa-arrow-down fa-sm"></i>
@@ -88,6 +97,7 @@ i {
 
 .socials i {
   margin: 0 48px 0 0;
+  cursor: pointer;
 }
 
 .fa-arrow-down {

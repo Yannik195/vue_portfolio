@@ -18,4 +18,10 @@ span {
   margin: 0 4px 0 0;
   font-size: 12px;
 }
+
+span:hover {
+  color: white;
+  border: 1px var(--blue-two) solid;
+  background-color: var(--blue-two);
+}
 </style>
