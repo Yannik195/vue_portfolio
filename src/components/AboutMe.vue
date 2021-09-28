@@ -43,7 +43,6 @@ h1 {
 
 h2 {
   font-size: clamp(18px, 8vw, 24px);
-  margin: 28px 0 44px 0;
 }
 
 h1 span {
@@ -68,6 +67,10 @@ h1 span {
 .content {
   grid-area: content;
   place-self: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 i {
@@ -78,7 +81,6 @@ i {
 .socials {
   display: flex;
   justify-content: space-between;
-  margin: 0 16px;
 }
 
 .fa-arrow-down {
@@ -97,7 +99,7 @@ i {
       "img"
       "content"
       "arrow";
-    grid-template-rows: 70px 1fr 1fr 70px;
+    grid-template-rows: 48px 1fr 1fr 48px;
     grid-template-columns: 1fr;
   }
 
@@ -109,7 +111,6 @@ i {
     background: #353a5a;
     border-radius: 5px;
     padding: 12px;
-    margin: 0 16px;
     display: flex;
     align-items: center;
     justify-content: space-around;
