@@ -69,8 +69,8 @@ export default {
         },
         {
           name: "Android",
-          svg: "https://upload.wikimedia.org/wikipedia/commons/8/82/Android_logo_2019.svg",
-          wide: false,
+          svg: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Android_new_logo_2019.svg/768px-Android_new_logo_2019.svg.png",
+          wide: true,
         },
         {
           name: "Java",
@@ -81,6 +81,11 @@ export default {
           name: "Bootstrap",
           svg: "https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg",
           wide: false,
+        },
+        {
+          name: "Netlify",
+          svg: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Netlify_logo.svg/1280px-Netlify_logo.svg.png",
+          wide: true,
         },
       ],
     };
@@ -109,9 +114,8 @@ export default {
 
 img {
   width: 100%;
-  height: 70px;
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%) opacity(30%) brightness(120%);
+  filter: grayscale(100%) opacity(40%) brightness(90%);
 }
 
 img:hover {
@@ -130,11 +134,11 @@ h1 {
 @media only screen and (max-width: 900px) {
   .wrapper {
     max-width: 60vw;
-    grid-template-columns: repeat(3, minmax(80px, 1fr));
+    grid-template-columns: repeat(4, minmax(80px, 1fr));
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .wrapper {
     grid-template-columns: repeat(2, minmax(80px, 1fr));
   }

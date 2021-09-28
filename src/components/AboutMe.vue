@@ -73,6 +73,10 @@ h1 span {
   justify-content: center;
 }
 
+.content > * {
+  margin-bottom: 24px;
+}
+
 i {
   color: #353a5a;
   font-size: 2rem;
@@ -99,7 +103,7 @@ i {
       "content"
       "arrow"
       ".";
-    grid-template-rows: 48px 1fr 1fr 48px 48px;
+    grid-template-rows: 64px 1fr 1fr 48px 48px;
     grid-template-columns: 1fr;
   }
 
