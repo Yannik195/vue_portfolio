@@ -41,6 +41,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 1.5em;
+  box-sizing: border-box;
 }
 header {
   height: 100vh;

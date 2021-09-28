@@ -82,6 +82,10 @@ i {
   font-size: 2rem;
 }
 
+.socials {
+  margin-top: 12px;
+}
+
 .socials i {
   margin: 0 48px 0 0;
 }
@@ -103,7 +107,7 @@ i {
       "content"
       "arrow"
       ".";
-    grid-template-rows: 64px 1fr 1fr 48px 48px;
+    grid-template-rows: 56px 1fr 1fr 48px 48px;
     grid-template-columns: 1fr;
   }
 
