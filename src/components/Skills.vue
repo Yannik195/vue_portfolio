@@ -105,11 +105,11 @@ export default {
 .wrapper {
   max-width: 900px;
   display: grid;
-  grid-template-columns: repeat(7, minmax(80px, 1fr));
+  grid-template-columns: repeat(12, 1fr);
+  gap: 24px;
   grid-auto-rows: auto;
   justify-items: center;
   align-items: center;
-  gap: 48px;
 }
 
 img {
@@ -133,14 +133,25 @@ h1 {
 
 @media only screen and (max-width: 900px) {
   .wrapper {
-    max-width: 60vw;
-    grid-template-columns: repeat(4, minmax(80px, 1fr));
+    grid-template-columns: repeat(10, 1fr);
   }
 }
 
 @media (max-width: 700px) {
   .wrapper {
-    grid-template-columns: repeat(2, minmax(80px, 1fr));
+    grid-template-columns: repeat(8, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .wrapper {
+    grid-template-columns: repeat(7, 1fr);
+  }
+}
+
+@media (max-width: 400px) {
+  .wrapper {
+    grid-template-columns: repeat(6, 1fr);
   }
 }
 </style>
