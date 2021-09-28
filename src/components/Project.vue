@@ -69,11 +69,9 @@ h3 {
 }
 
 .project {
-  margin: 84px;
 }
 
 .info {
-  margin: 0 16px 16px 16px;
 }
 
 .tag:last-child {

@@ -9,6 +9,7 @@
       </ul>
     </div>
     <i class="fas fa-bars fa-xs"></i>
+    <div class=""></div>
   </div>
 </template>
 
@@ -28,12 +29,23 @@ export default {
   display: flex;
   justify-content: end;
 }
-.navbar ul {
+
+.mobile {
+  position: absolute;
+  top: 55px;
+  background-color: white;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  z-index: 100;
+  overflow: hidden;
+}
+.desktop-nav ul {
   display: flex;
   margin: 0;
 }
 
-.navbar ul li {
+.desktop-nav ul li {
   list-style-type: none;
   text-transform: uppercase;
   font-size: 0.8rem;

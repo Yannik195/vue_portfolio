@@ -103,7 +103,6 @@ export default {
   align-items: center;
 }
 .wrapper {
-  max-width: 900px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 24px;
@@ -124,7 +123,6 @@ img:hover {
 }
 
 h1 {
-  margin: 2em;
 }
 
 .wide {
