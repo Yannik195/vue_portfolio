@@ -6,6 +6,7 @@
     <main>
       <Projects></Projects>
       <Skills></Skills>
+      <Contact></Contact>
     </main>
   </div>
 </template>
@@ -14,6 +15,7 @@
 import AboutMe from "./components/AboutMe.vue";
 import Projects from "./components/Projects.vue";
 import Skills from "./components/Skills.vue";
+import Contact from "./components/Contact.vue";
 export default {
   name: "App",
   data: () => {
@@ -23,6 +25,7 @@ export default {
     AboutMe,
     Projects,
     Skills,
+    Contact,
   },
 };
 </script>
@@ -34,6 +37,7 @@ export default {
   --blue-one: rgba(53, 58, 90, 1);
   --blue-two: rgba(53, 58, 90, 0.8);
   --blue-three: rgba(53, 58, 90, 0.1);
+  --placeholder: rgba(53, 58, 90, 0.4);
 }
 html,
 body {
