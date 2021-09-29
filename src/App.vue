@@ -33,6 +33,7 @@ export default {
 :root {
   --blue-one: rgba(53, 58, 90, 1);
   --blue-two: rgba(53, 58, 90, 0.8);
+  --blue-three: rgba(53, 58, 90, 0.1);
 }
 html,
 body {

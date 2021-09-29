@@ -1,6 +1,5 @@
 <template>
   <div class="skills">
-    <h1>Technologies i like working with</h1>
     <div class="wrapper">
       <img
         v-for="skill in skills"

@@ -49,7 +49,12 @@ export default {
   list-style-type: none;
   text-transform: uppercase;
   font-size: 0.8rem;
-  padding: 0 24px;
+  padding: 8px 24px;
+  cursor: pointer;
+}
+.desktop-nav ul li:hover {
+  background-color: var(--blue-three);
+  border-radius: 4px;
 }
 
 .fa-bars {

@@ -69,9 +69,11 @@ h3 {
 }
 
 .project {
+  margin: 24px 0;
 }
 
 .info {
+  margin: 0 12px;
 }
 
 .tag:last-child {
@@ -93,6 +95,10 @@ h3 {
   img {
     width: clamp(12px, 94vw, 500px);
     margin: 0 16px;
+  }
+
+  .info {
+    margin: 0;
   }
 }
 </style>
