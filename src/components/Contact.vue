@@ -47,6 +47,11 @@ form > * {
   margin: 6px 0;
 }
 
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
 input,
 textarea {
   background: white;

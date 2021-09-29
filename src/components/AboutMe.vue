@@ -96,8 +96,8 @@ i {
 }
 
 .socials i {
-  margin: 0 48px 0 0;
   cursor: pointer;
+  margin-right: 48px;
 }
 
 .fa-arrow-down {
@@ -132,23 +132,22 @@ i {
   .socials {
     background: #353a5a;
     border-radius: 5px;
-    padding: 12px;
+    padding: 6px;
     display: flex;
-    align-items: center;
     justify-content: space-around;
-    max-width: 400px;
+    align-items: center;
   }
 
   .socials i {
     color: #fff;
-    margin: 0 24px;
+    margin: 0;
   }
 
   .fa-arrow-down {
   }
 
   i {
-    font-size: 1rem;
+    font-size: 1.4rem;
   }
 }
 </style>

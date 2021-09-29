@@ -1,6 +1,6 @@
 <template>
   <div class="skills">
-    <div class="wrapper">
+    <div class="wrapper" data-aos="fade-up">
       <img
         v-for="skill in skills"
         :key="skill.name"
@@ -95,7 +95,7 @@ export default {
 <style scoped>
 .skills {
   text-align: center;
-
+  margin: 128px 24px;
   display: flex;
   flex-direction: column;
   justify-content: center;

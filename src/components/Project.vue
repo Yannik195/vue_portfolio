@@ -69,7 +69,7 @@ h3 {
 }
 
 .project {
-  margin: 24px 0;
+  margin: 24px 0 128px 0;
 }
 
 .info {
