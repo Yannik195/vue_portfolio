@@ -4,10 +4,11 @@
     <form name="contact" netlify>
       <input type="text" id="fname" name="fname" placeholder="E-Mail" />
       <textarea
-        name="Text1"
+        name="fmessage"
         cols="40"
         rows="4"
         placeholder="Message"
+        id="fmessage"
       ></textarea>
       <button type="submit">SEND</button>
     </form>
