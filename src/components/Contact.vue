@@ -9,7 +9,7 @@
         rows="4"
         placeholder="Message"
       ></textarea>
-      <button>SEND</button>
+      <button type="submit">SEND</button>
     </form>
     <h4>or contact me</h4>
     <h4>hallo@yanniksimon.de</h4>
