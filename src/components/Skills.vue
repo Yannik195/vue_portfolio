@@ -86,6 +86,11 @@ export default {
           svg: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Netlify_logo.svg/1280px-Netlify_logo.svg.png",
           wide: true,
         },
+        {
+          name: "Netlify",
+          svg: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Netlify_logo.svg/1280px-Netlify_logo.svg.png",
+          wide: true,
+        },
       ],
     };
   },
