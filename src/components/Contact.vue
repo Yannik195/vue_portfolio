@@ -1,7 +1,7 @@
 <template>
   <div class="contact">
     <h1>Leave me a message</h1>
-    <form name="contact" data-netlify="true">
+    <form name="contact" netlify>
       <input type="text" id="fname" name="fname" placeholder="E-Mail" />
       <textarea
         name="Text1"
